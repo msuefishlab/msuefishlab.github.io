@@ -1,4 +1,4 @@
-### basic settings
+sh### basic settings
 
 # site properties and page defaults
 title: Lab Website Template
@@ -6,7 +6,7 @@ description: An easy-to-use, flexible website template for labs, with automatic 
 logo: images/logo.svg
 header: images/background.jpg
 footer: images/background.jpg
-baseurl: /lab-website-template
+baseurl: /efish_new
 
 # site social media and other links
 links:
