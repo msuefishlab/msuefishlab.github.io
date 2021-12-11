@@ -1,0 +1,13 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+
+.tippy-box {
+  font-family: $sans;
+  padding: 10px;
+  font-size: 1rem;
+}
