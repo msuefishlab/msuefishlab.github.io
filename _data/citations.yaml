@@ -11,6 +11,9 @@
   link: https://doi.org/gjzbkw
   tags:
   - Reproduction
+  extra-links:
+  - type: pdf
+    link: images/koenigandgallant2021.pdf
 - id: doi:10.1111/evo.13953
   title: Genetic drift does not sufficiently explain patterns of electric signal variation
     among populations of the mormyrid electric fish <i>Paramormyrops kingsleyae</i>
@@ -25,6 +28,9 @@
   link: https://doi.org/gnrxc7
   tags:
   - Signal Evolution
+  extra-links:
+  - type: pdf
+    link: images/picqetal2020.pdf
 - id: doi:10.1242/jeb.213447
   title: Studying convergent evolution to relate genotype to behavioral phenotype
   authors:
@@ -35,6 +41,9 @@
   link: https://doi.org/gnrxc8
   tags:
   - Review
+  extra-links:
+  - type: pdf
+    link: images/gallant_and_oconnell_2020.pdf
 - id: doi:10.1186/s12862-019-1572-3
   title: The transcriptional correlates of divergent electric organ discharges in
     Paramormyrops electric fish
@@ -48,6 +57,9 @@
   tags:
   - Transcriptome
   - Signal Evolution
+  extra-links:
+  - type: pdf
+    link: images/losilla_et_al_2020.pdf
 - id: doi:10.1016/j.cub.2018.05.012
   title: Electrostatic Tuning of a Potassium Channel in Electric Fish
   authors:
@@ -64,6 +76,9 @@
   link: https://doi.org/gdpdk6
   tags:
   - Signal Evolution
+  extra-links:
+  - type: pdf
+    link: images/immani_et_al_2019.pdf
 - id: doi:10.3791/60253
   title: 'Silencing the Spark: CRISPR/Cas9 Genome Editing in Weakly Electric Fish'
   authors:
@@ -78,6 +93,9 @@
   tags:
   - CRISPR
   - Protocol
+  extra-links:
+  - type: pdf
+    link: images/constantinou_etal_2019.pdf
 - id: doi:10.1093/gbe/evx265
   title: The Genome and Adult Somatic Transcriptome of the Mormyrid Electric Fish
     Paramormyrops kingsleyae
@@ -91,6 +109,9 @@
   link: https://doi.org/gcpk9x
   tags:
   - Genome
+  extra-links:
+  - type: pdf
+    link: images/gallant_et_al_2017.pdf
 - id: doi:10.1016/j.jphysparis.2016.10.003
   title: 'Electric fish genomics: Progress, prospects, and new tools for neuroethology'
   authors:
@@ -103,6 +124,9 @@
   link: https://doi.org/gnrxdc
   tags:
   - Review
+  extra-links:
+  - type: pdf
+    link: images/pitchers_et_al_2016.pdf
 - id: doi:10.1186/s12864-015-1288-8
   title: Unique patterns of transcript and miRNA expression in the South American
     strong voltage electric eel (Electrophorus electricus)
@@ -129,6 +153,9 @@
   tags:
   - Genome
   - Transcriptome
+  extra-links:
+  - type: pdf
+    link: images/traeger_et_al_2015.pdf
 - id: doi:10.1038/ncomms5817
   title: Ancient homology underlies adaptive mimetic diversity across butterflies
   authors:
@@ -148,8 +175,8 @@
   date: '2014-09-08'
   link: https://doi.org/f6kpzv
   extra-links:
-  - type: website
-    link: http://msutoday.msu.edu/news/2014/a-single-evolutionary-road-may-lead-to-rome/
+  - type: pdf
+    link: images/gallant_et_al_2014.pdf
   tags:
   - Transcriptome
   - Genome
@@ -194,7 +221,9 @@
     text: MSU Today
   - type: journal
     link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
-    Text: CINA
+    text: CINA
+  - type: pdf
+    link: images/gallantetal2014.pdf
   tags:
   - Genome
   - Transcriptome
@@ -215,12 +244,17 @@
   link: https://doi.org/gmq97x
   image: images/S2211124713X00166_covhighres.jpg
   extra-links:
-  - type: website
+  - type: journal
+    text: The Economist
     link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
-  - type: website
+  - type: journal
+    text: LA Times
     link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
-  - type: website
+  - type: journal
+    text: Science Magazine
     link: (http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
+  - type: pdf
+    link: images/kronforstetal2013.pdf
   tags:
   - Genome
   - Transcriptome
@@ -236,6 +270,9 @@
   tags:
   - Review
   - Evo-Devo
+  extra-links:
+  - type: pdf
+    link: images/carlson_and_gallant_2013.pdf
 - id: doi:10.1242/jeb.063222
   title: Differential expression of genes and proteins between electric organ and
     skeletal muscle in the mormyrid electric fish <i>Brienomyrus brachyistius</i>
@@ -248,6 +285,9 @@
   link: https://doi.org/gnrxdf
   tags:
   - Evo-Devo
+  extra-links:
+  - type: pdf
+    link: images/gallant_etal_2012.pdf
 - id: doi:10.1007/s00359-011-0643-8
   title: Signal variation and its morphological correlates in Paramormyrops kingsleyae
     provide insight into the evolution of electrogenic signal diversity in mormyrid
@@ -263,3 +303,6 @@
   link: https://doi.org/c85zzr
   tags:
   - Signal Evolution
+  extra-links:
+  - type: pdf
+    link: images/gallant_etal_2011.pdf
