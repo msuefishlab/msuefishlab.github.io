@@ -1,0 +1,11 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2018-08-30 00:00:00+00:00
+title: New Ph.D. Student Lauren Koenig!
+tags: [news]
+---
+![/people/lauren/](/images/lauren.png)
+
+We are pleased to announce that Lauren Koenig joined the lab on August 30th, 2018!  Welcome Lauren!

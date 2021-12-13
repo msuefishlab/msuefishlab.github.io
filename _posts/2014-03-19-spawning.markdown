@@ -1,0 +1,18 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2014-03-19 01:38:06+00:00
+title: Brienomyrus brachyistius spawning
+tags: [lab, development]
+---
+
+[Monica](/people/monica/) and I have been hard at work getting _Brienomyrus brachyistius_ to breed again in the lab-- we've been having great success with getting them spawning!  Over the past month, we've had hundreds of eggs.  Here is a video of the "main event" occurring several hours after nightfall, which occurs at 19:00 hours.  While this is a 30 second clip, preliminary analysis of our video shows that the pair spawns repeatedly over the ensuing 10-15 minutes, and likely many more times out of frame.
+
+<video class="video_float_right" src="/images/spawning_mar11.mp4" controls></video>
+
+For some reason, the pair really seems to like breeding next to this partition-- reasons unknown at the moment.
+
+The next morning, we found about 20-40 eggs in the tank.  Later in the week, we had more than 150!  If you'd like to see some nice photos of the results, check out my earlier [blog post](http://efish.zoology.msu.edu/baby-electric-fish/).
+
+Some neat behavior for sure, more soon to follow...

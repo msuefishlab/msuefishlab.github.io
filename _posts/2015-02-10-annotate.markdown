@@ -1,0 +1,331 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2015-02-10 19:52:40+00:00
+title: Running MAKER Genome Annotation on STARCLUSTER
+tags: [code]
+---
+
+I've been running an experiment trying to implement AWS in some of our bioinformatics projects.  After surveying some nice reviews (Yandell and Ence, 2012), I've decided on the MAKER pipeline to get things started.  The basic approach will be to take orthologous proteins from other organisms, together with existing transcriptome data (assembled by cufflinks), and use this as a means of pulling out putative coding regions to train an ab-inito gene predictor (such as SNAP or Augustus) to build gene models.  Given the numerous BLAST steps that are involved in aligning this data, as well as processing it, the folks in the Yandell lab made MAKER parallel, through the use of either OpenMPI or MPICH2.  Although we have an installation of the MAKER software on campus, it hasn't been updated in a while, and there is something of a queue run very long jobs with lots of processors-- I wondered if there were other options.
+
+Many folks have touted the virtues of using Amazon Web Services (AWS) for bioinformatics (e.g. here)-- it is great for making portable machines for bioinformatics analysis.  For the uninitiated, AWS 'leases' computing time to anyone with a credit card for the purposes of data crunching.  It's tremendously handy, but bioinformaticians typically deploy only one machine for their analysis-- not very handy for taking advantage of the MPI capabilities of MAKER.    Certainly,  someone with a strong background in computer science or programming could set up a cluster using AWS, but who has the time?  Some quick googling uncovered a tremendous software package called, Starcluster, essentially a script that takes all of the pain out of this process.  It's software written by folks at MIT, and with some minor edits to a configuration file, you can get your own cluster up and running in a matter of minutes.
+
+What follows is an assembly of links and advice in getting MAKER running on AWS.  The system that I've been able to assemble through a lot of trial and error works fairly reliably on large eukaryotic genomes.   By my estimation, a full run (including repeat masking, protein BLASTs, ab-inito gene prediction, etc.) takes about 7-8 hours on 200 nodes with 4 processors each.  Not too shabby.
+
+
+## Step 1: Set up Starcluster and Amazon EC2
+
+
+Rather than reinvent the wheel, check out [Wes Kendall](http://mpitutorial.com/about/)'s awesome tutorial on how to set up AWS and Starcluster to launch your first cluster.
+
+[http://mpitutorial.com/launching-an-amazon-ec2-mpi-cluster/](http://mpitutorial.com/launching-an-amazon-ec2-mpi-cluster/)
+
+Starcluster also maintains a quick start guide that is also quite nice if you'd like to follow that instead, though it lacks the information about getting set up with AWS, if you've never used it before.
+
+**http://star.mit.edu/cluster/docs/latest/quickstart.html**
+
+Once you've started and terminated your first cluster, come back here and we will play with the config files.
+
+
+## Step 2: Set up region and data volumes
+
+
+You'll want to put your data somewhere-- the instances that you will create have what is called "ephemeral" storage, meaning that the memory is cleared each time the computer is started up.  To keep your data, you'll have to create a volume to store it.  EC2 makes this very easy.  Go to your EC2 dashboard, and click on "Volumes" under Elastic Block Store.  Click "Create Volume" at the top.  Choose a General Purpose (SSD) drive, and request an appropriate size (you'll want to be able to accommodate the size of the data that you are using in MAKER, as well as the output data.  My data drive is 300GB, which is more than ample room (probably overkill).   Pricing is per GB, and varies regionally.  The information on pricing is located [here](http://aws.amazon.com/ebs/pricing/).   You'll also want to choose an availability zone to work within-- EBS volumes are not accessible outside their availability zone.  Remember the availability zone that you choose for your data volume (it matters not).  When you click "create" you'll be returned to a list of the volumes you've created-- when the creation process is complete, you'll be able to name your volume something descriptive (e.g. "data").  Note the volume ID.
+
+Next,  you'll want starcluster to play nicely with your newly created volume.  To do this, you simply need to edit the availability zone settings of your cluster by editing the configuration file:
+
+
+    AWS_REGION_NAME = us-east-1d   #this matches the availability zone of your data volume
+    AWS_REGION_HOST = ec2.us-east-1.amazonaws.com  # this is found by looking on AWS (link below)
+
+
+The region hosts are maintained on [this](http://docs.aws.amazon.com/general/latest/gr/rande.html) list by Amazon.
+
+
+## Step 3: Configure MPI and Install MAKER onto an AMI
+
+
+With that out of the way, we must now get down to the business of running MAKER on your new cluster.  To start with, we want install MAKER on our machine.  A nice overview of the process is located here:
+
+[http://star.mit.edu/cluster/docs/0.93.3/manual/create_new_ami.html](http://star.mit.edu/cluster/docs/0.93.3/manual/create_new_ami.html)
+
+First we determine the available images (which contain all of the stuff that makes starcluster run) - at the time of publication, this is what "starcluster list public" gives us:
+
+
+    $ starcluster listpublic
+
+    StarCluster - (http://star.mit.edu/cluster) (v. 0.95.6)
+    Software Tools for Academics and Researchers (STAR)
+    Please submit bug reports to starcluster@mit.edu
+
+    >>> Listing all public StarCluster images...
+
+    32bit Images:
+    -------------
+    [0] ami-9bf9c9f2 us-east-1d starcluster-base-ubuntu-13.04-x86 (EBS)
+    [1] ami-7c5c3915 us-east-1d starcluster-base-ubuntu-12.04-x86 (EBS)
+    [2] ami-899d49e0 us-east-1d starcluster-base-ubuntu-11.10-x86 (EBS)
+    [3] ami-8cf913e5 us-east-1d starcluster-base-ubuntu-10.04-x86-rc3
+    [4] ami-d1c42db8 us-east-1d starcluster-base-ubuntu-9.10-x86-rc8
+
+    64bit Images:
+    --------------
+    [0] ami-3393a45a us-east-1d starcluster-base-ubuntu-13.04-x86_64 (EBS)
+    [1] ami-6b211202 us-east-1d starcluster-base-ubuntu-13.04-x86_64-hvm (HVM-EBS)
+    [2] ami-52a0c53b us-east-1d starcluster-base-ubuntu-12.04-x86_64-hvm (HVM-EBS)
+    [3] ami-765b3e1f us-east-1d starcluster-base-ubuntu-12.04-x86_64 (EBS)
+    [4] ami-4583572c us-east-1d starcluster-base-ubuntu-11.10-x86_64-hvm (HVM-EBS)
+    [5] ami-999d49f0 us-east-1d starcluster-base-ubuntu-11.10-x86_64 (EBS)
+    [6] ami-0af31963 us-east-1d starcluster-base-ubuntu-10.04-x86_64-rc1
+    [7] ami-2faa7346 us-east-1d starcluster-base-ubuntu-10.04-x86_64-qiime-1.4.0 (EBS)
+    [8] ami-8852a0e1 us-east-1d starcluster-base-ubuntu-10.04-x86_64-hadoop
+    [9] ami-a5c42dcc us-east-1d starcluster-base-ubuntu-9.10-x86_64-rc4
+    [10] ami-06a75a6f us-east-1d starcluster-base-centos-5.4-x86_64-ebs-hvm-gpu-hadoop-rc2 (HVM-EBS)
+    [11] ami-12b6477b us-east-1d starcluster-base-centos-5.4-x86_64-ebs-hvm-gpu-rc2 (HVM-EBS)
+
+    total images: 17
+
+
+The first 64-bit image should work perfectly fine for our purposes.  Noting the AMI number (ami-3393a45a), we will tell starcluster to start a one-node cluster for us to download our software on.  We'll use an m1.xlarge machine for this, although it doesn't really matter so long as it is a 64-bit machine.
+
+
+    starcluster start -s 1 -i m1.xlarge -n ami-3393a45a software_install
+
+
+Once starcluster is done, you can connect with the following command:
+
+
+    starcluster sshmaster software_install
+
+
+It is important to note at this time that you are logged in as the "root" user when connecting by this method.  The root user's home directory "/root" is NOT shared via NFS to other nodes on the system, which means trouble for using MPI with your installed programs.  The home folder of the cluster user (set in your configuration file by default to be "sgeadmin") is, however shared by NFS.  That's where you want to put MAKER.  Go to the following website to register and obtain the download link for MAKER:
+
+[http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi](http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi)
+
+Once you've obtained the download link,
+
+
+    cd /home/sgeadmin/
+    wget http://link.to/maker_software  #you obtain the link by registering with MAKER
+    tar -zxvf maker-2.31.8.tgz
+
+
+Next, there seems to be a bit of a bug with the MPI installation using the current base AMI (which should be OpenMPI by default).  To set this properly:
+
+
+    update-alternatives --config mpi
+
+
+This will give you the following menu.  You will want to choose "2" (OpenMPI).
+
+
+    There are 2 choices for the alternative mpi (providing /usr/include/mpi).
+
+      Selection    Path                      Priority   Status
+    ------------------------------------------------------------
+    * 0            /usr/include/mpich2        40        auto mode
+      1            /usr/include/mpich2        40        manual mode
+      2            /usr/lib/openmpi/include   40        manual mode
+
+    Press enter to keep the current choice[*], or type selection number:<span style="background-color: #f4f4f4;">2</span>
+
+
+Now that OpenMPI is set, you'll want to get the path to the "libmpi.so" for OpenMPI.  Verify this by typing
+
+
+    $ update-alternatives --display mpi
+
+    ...
+    /usr/lib/openmpi/include - priority 40
+     slave libmpi++.so: /usr/lib/openmpi/lib/libmpi_cxx.so
+     slave libmpi.so: /usr/lib/openmpi/lib/libmpi.so
+     slave libmpif77.so: /usr/lib/openmpi/lib/libmpi_f77.so
+     slave libmpif90.so: /usr/lib/openmpi/lib/libmpi_f90.so
+     slave mpiCC: /usr/bin/mpic++.openmpi
+     slave mpiCC.1.gz: /usr/share/man/man1/mpiCC.openmpi.1.gz
+     slave mpic++: /usr/bin/mpic++.openmpi
+     slave mpic++.1.gz: /usr/share/man/man1/mpic++.openmpi.1.gz
+     slave mpicc: /usr/bin/mpicc.openmpi
+     slave mpicc.1.gz: /usr/share/man/man1/mpicc.openmpi.1.gz
+     slave mpicxx: /usr/bin/mpic++.openmpi
+     slave mpicxx.1.gz: /usr/share/man/man1/mpicxx.openmpi.1.gz
+     slave mpif77: /usr/bin/mpif77.openmpi
+     slave mpif77.1.gz: /usr/share/man/man1/mpif77.openmpi.1.gz
+     slave mpif90: /usr/bin/mpif90.openmpi
+     slave mpif90.1.gz: /usr/share/man/man1/mpif90.openmpi.1.gz
+
+
+We can see here that the path to libmpi.so is: "/usr/lib/openmpi/lib/libmpi.so".  You'll need to set some environment variables next, before you go any further.  Open ~/.bashrc with your favorite text editor and add the following lines at the bottom:
+
+
+    export LD_PRELOAD=/usr/lib/openmpi/lib/libmpi.so
+    export MPI_MCA_mpi_warn_on_fork=0
+
+
+Close your .bashrc file and reload it by typing the following:
+
+
+    source ~/.bashrc
+
+
+Now we're ready to rock!  You should be able to install Maker by following the standard build instructions included in the distribution:
+
+
+    cd /home/sgeadmin/maker/src
+    perl Build.PL
+
+    ## Follow command prompts.  
+    ## Choose Y for Maker for MPI, and use default paths for MPI.
+
+    ./Build install deps
+    ./Build installexes
+    #Note that you'll have to register at repbase in order to download
+    #the repeatmasker libraries
+    ./Build install
+
+
+
+You should now have a working installation of MAKER!
+
+Once you're satisfied that everything is installed correctly, you'll want to save the image in order to use it on your cluster.  Go to the AWS EC2 control panel, and click on "Instances".  Select your "master" node from the list, and click "Actions>Image>Create Image".  Give your image a name and description, and click "Create Image".  Note that any volumes attached to the machine will also be imaged by default.  You can remove these safely to make the smallest image possible (click the little x's).
+
+Once the image is completed, you'll be able to find the AMI id under "Images>AMIs".
+
+
+## Step 4: Configure Your Cluster
+
+
+You're going to want to make some changes to the starcluster configuration file.  Cluster configuration is based on a template system which is fully extensible, which means you don't have to retype all of the configuration options, only the ones you want to change.  We'll base our new template on the "default" small cluster template.  Inside your "Additional Cluster Templates" section, add the following:
+
+
+    [cluster makercluster]
+    EXTENDS=smallcluster
+    CLUSTER_SIZE=200
+    NODE_IMAGE_ID=XX  #insert the AMI ID number for the instance containing your MAKER installation
+    NODE_INSTANCE_TYPE=m1.xlarge
+    VOLUMES = data
+    DISABLE_QUEUE=True
+
+
+In addition, you'll want to tell starcluster where to find your EBS data volume that you created earlier.  In the configuration file, find the "Configuring EBS Volumes" section in your config file and add the following:
+
+
+    [volume data]
+    VOLUME_ID= # volume ID for your EBS 'data' volume
+    MOUNT_PATH= /mnt/data
+
+
+You're ready to rock!
+
+
+## Step 5: Setup Your Cluster
+
+
+
+
+#### Notes on "Hardware" and Pricing
+
+
+First things first, you'll want to select the "hardware" (known as an instance) that you'll be making your cluster out of.  The specs and pricing per hour are located here:
+
+http://aws.amazon.com/ec2/pricing/
+
+This can be somewhat overwhelming at first-- but worry not!  For my experimentation purposes, I've been using m1.xlarge resources, which feature four virtual CPUs, about 15GB of RAM and decent network performance.  You can get pretty crazy with RAM and CPUs, but this typically suffices.  Feel free to play with this as you see fit!
+
+You have the option of paying the listed "reserved" rates, meaning that as long as you want to use the machine, it's yours!  But, as scientists with ever shrinking grant funds, sometimes its a good idea to minimize costs whenever possible.  Enter Amazon's "Spot Pricing".  Here you can bid on computing time, and so long as your bid is not exceeded, you can use the resources you request.  There is a bit of an art to selecting the proper price so your jobs don't die-- but thankfully Amazon does the hard work of finding out what historical pricing has been.  To figure this out for your desired hardware, StarCluster makes it pretty easy to check:
+
+
+    starcluster spothistory -p m1.large
+
+
+Which will open up a webpage with pricing over the last 30 days, as well as print a summary of the pertinent information to your terminal:
+
+
+    >>> Fetching spot history for m1.large (VPC)
+    >>> Current price: $0.0161
+    >>> Max price: $1.5000
+    >>> Average price: $0.0743
+
+
+So, were you to bid on these computers, you would pay $0.0161 per instance per hour-- a significant savings off the current "reserved" price of $0.175 per Hour (about 10% the price in fact!).  If demand for these computers shoots up (as you can see happens periodically from your graph), pricing goes up.  If your bid exceeds the current price, you get to keep running at the new price.  If not, your instance is closed.  The trick is to make a bid that is high enough to keep your jobs running-- typically, I've been working at approximately double the current price, and that seems to work fairly well.
+
+Launch your cluster with the following command.  Remember, we've set a 200-node cluster in our configuration file.  The -b flag sets your bid price, and the -c tells starcluster to use your makercluster template.   Because there are so many nodes, this might take a while!
+
+
+    starcluster start -c makercluster -b 0.04 makercluster
+
+
+
+
+Once everything is started up, you are ready to run Maker.  You can upload data from your personal hard drive to the /mnt/data storage area by the following:
+
+
+    starcluster put makercluster /mnt/data /local/path/to/datafile
+
+
+Once you've uploaded your data, go ahead and login to your master node:
+
+
+    starcluster sshmaster makercluster
+
+
+Start a directory for your maker data to live in, then the following to generate your Maker control files.
+
+
+    /home/sgeadmin/maker/bin/maker -CTL
+
+
+Set options according to this website:
+
+http://weatherby.genetics.utah.edu/MAKER/wiki/index.php/The_MAKER_control_files_explained
+
+Specifically for your maker cluster, you want to reduce the chunk size of the DNA to be more RAM-efficient and set the temporary directory to be a location specific to each node, rather than using NFS (which slows things down and creates headaches).  In the maker_opts.ctl file, set the following options:
+
+
+    max_dna_len=50000
+    TMP=/scratch/sgeadmin/
+
+
+Finally, you'll have to generate a hosts file so that OpenMPI knows how to farm out the jobs:
+
+
+    cat /etc/hosts
+
+
+Which looks like:
+
+
+    127.0.0.1 localhost
+
+    # The following lines are desirable for IPv6 capable hosts
+    ::1 ip6-localhost ip6-loopback
+    fe00::0 ip6-localnet
+    ff00::0 ip6-mcastprefix
+    ff02::1 ip6-allnodes
+    ff02::2 ip6-allrouters
+    ff02::3 ip6-allhosts
+    172.31.27.144 master
+
+
+
+
+Copy this to a text editor, and remove all of the lines prior to the line containing "master".   Remove all IP addresses, so that the following list looks like the following:
+
+
+    master
+    node001
+    node002
+    ...
+
+
+
+Save this text file as "hosts.txt" in the maker output directory.
+
+Once you're satisfied that everything is correctly setup, you should be able to run MAKER with a command like the following:
+
+
+    mpirun -x LD_PRELOAD -x OMPI_MCA_mpi_warn_on_fork -n 200 -hostfile hosts.txt -tag-output ~/maker/bin/maker -cpus 4 2>&1 | tee maker_log.txt
+
+
+Happy annotating!

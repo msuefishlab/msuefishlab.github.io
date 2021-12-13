@@ -1,0 +1,11 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2018-03-01 20:52:59+00:00
+title: New Undergraduate Angelina Sdao!
+tags: [news]
+---
+![/people/angelina/](/images/angelina.png)
+
+We are pleased to announce that Angelina Sdao joined the lab on March 1st, 2018!  Welcome Angelina!

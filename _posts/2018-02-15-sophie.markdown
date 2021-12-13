@@ -1,0 +1,11 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2018-02-15 20:52:59+00:00
+title: New Postdoc Dr. Sophie Picq!
+tags: [news]
+---
+![/people/sophie/](/images/sophie.png)
+
+We are pleased to announce that Dr. Sophie Picq joined the lab on February 15th, 2018. Welcome Sophie!  Sophie completed her Ph.D. in Biology in 2017 from The International Max Planck Research School for Evolutionary Biology, a studying sympatric speciation in coral reef fish.  Sophie previously worked at McGill University/STRI (Panama) where she worked on the phylogeography of Brachyhypopomus electric fishes.  Welcome back to the EFISH world!

@@ -7,25 +7,25 @@ nav:
 
 # <i class="fas fa-envelope"></i>Contact
 
-Our lab is part of the [Department of Metaphor](), at the school of [Whimsy and Caprice]().
-We are located on the 13th floor of the [Center for Wit and Sagacity]().
+Our lab is part of the [Department of Integrative Biology](https://integrativebiology.natsci.msu.edu), at [Michigan State University](http://www.msu.edu).
+We are located on the 1st floor of [Giltner Hall](https://maps.msu.edu/interactive/index.php?location=6NHQ).
 
 {%
   include link.html
   type="email"
   icon=""
-  text="scrooge@mcduck.com"
+  text="jgallant@msu.edu"
   tooltip=""
-  link="scrooge@mcduck.com"
+  link="jgallant@msu.edu"
   style="button"
 %}
 {%
   include link.html
   type="phone"
   icon=""
-  text="(555) 867-5309"
+  text="(517) 884-7756"
   tooltip=""
-  link="+1-555-867-5309"
+  link="+1-517-884-7756"
   style="button"
 %}
 {%
@@ -34,32 +34,31 @@ We are located on the 13th floor of the [Center for Wit and Sagacity]().
   icon=""
   text="Google Maps"
   tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps/place/That+St+%26+The+Other+St,+Porters+Lake,+NS+B3E+1H3,+Canada/@44.7389237,-63.3033296,20.78z/data=!4m5!3m4!1s0x4b5a31023bb02565:0xb9505694e83a53d7!8m2!3d44.7389353!4d-63.3030828"
+  link="https://www.google.com/maps/place/Giltner+Hall,+293+Farm+Ln,+East+Lansing,+MI+48825/@42.7301698,-84.4786089,17z/data=!3m1!4b1!4m5!3m4!1s0x8822c281c37243e1:0x8e9ecd41ac7320c5!8m2!3d42.7301659!4d-84.4764202"
   style="button"
 %}
 {:.center}
 
 {% include section.html %}
 
-### <i class="fas fa-mail-bulk"></i>Mailing Address
 
-That St & The Other St  
-Porters Lake, NS B3E 1H3  
-Canada
-{:.center}
 
 {% capture col1 %}
 {%
   include figure.html
-  image="images/photo.jpg"
-  caption="The Center for Wit and Sagacity"
+  image="images/giltner.jpg"
+  caption="Giltner Hall, Farm Lane East Lansing"
 %}
 {% endcapture %}
 {% capture col2 %}
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Department of Metaphor"
-%}
+### <i class="fas fa-mail-bulk"></i>Mailing Address
+
+Dr. Jason Gallant  
+Department of Integrative Biology  
+Room 203 Natural Sciences  
+288 Farm Lane  
+East Lansing, MI 48824  
+USA
+{:.center}
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}

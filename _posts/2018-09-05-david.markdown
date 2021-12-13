@@ -1,0 +1,11 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2018-09-05 00:00:00+00:00
+title: New Postdoc Dr. David Luecke!
+tags: [news]
+---
+![/people/david/](/images/david.png)
+
+We are pleased to announce that David Luecke will be joining the lab in October as our new postdoc!  He joins us from UC Davis, where he did his Ph.D. work on _Drosophila prolongata_.  David will be working on a new project on the evolution and development of electric organs!

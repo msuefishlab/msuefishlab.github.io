@@ -4,88 +4,22 @@ nav:
   order: 3
   tooltip: About our team
 ---
-
 # <i class="fas fa-users"></i>Team
+The MSU Electric Fish Lab values curiosity about the natural world, independent inquiry, critical thinking, science literacy, and accessible, open science, as well as strong prioritization of mentorship at all career levels.  Since opening in 2013, we've built a large and productive lab group with many talented students, postdocs, and technicians from around the world, including Canada, Costa Rica, France, England and the US.  Many of our students come from diverse economic backgrounds, and groups typically underrepresented in STEM fields.  A particular point of pride is our outstanding group of undergraduates, many of whom have gone on to pursue graduate research positions at other institutions.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-{% include section.html %}
-
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: pi"
-%}
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: phd"
-%}
-{%
-  include list.html
-  data="members"
-  component="portrait"
-  filters="role: programmer"
-%}
+{% include list.html data="members" component="portrait" filters="role: pi, group: " %}
+{% include list.html data="members" component="portrait" filters="role: technician, group: " %}
+{% include list.html data="members" component="portrait" filters="role: postdoc, group: " %}
+{% include list.html data="members" component="portrait" filters="role: phd, group: " %}
+{% include list.html data="members" component="portrait" filters="role: undergrad, group: " %}
+{% include list.html data="members" component="portrait" filters="role: programmer, group: " %}
 {:.center}
 
-{% include section.html background="images/banner.jpg" dark=true%}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-## Join
-
-#### Post Dogtoral Researcher
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-- 3+ (dog) years experience managing bone portfolios
-- Strong desire to learn tricks and go on walkies
-- Aptitude to sit and stay
-
-{% include link.html type="external" link="https://google.com/" text="Apply Now" icon="" style="button" %}
+# <i class="fas fa-users"></i>Alumni
+{% include list.html data="members" component="portrait" filters="role: pi, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: technician, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: postdoc, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: phd, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: undergrad, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: programmer, group: alumni" style="small" %}
 {:.center}
-
-{% include section.html %}
-
-## Funding
-
-Our work is made possible by funding from several organizations.
-{:.center}
-
-{%
-  include gallery.html
-  style="square"
-
-  image1="images/photo.jpg"
-  link1="https://nasa.gov/"
-  tooltip1="Cool Foundation"
-
-  image2="images/photo.jpg"
-  link2="https://nasa.gov/"
-  tooltip2="Cool Institute"
-
-  image3="images/photo.jpg"
-  link3="https://nasa.gov/"
-  tooltip3="Cool Initiative"
-
-  image4="images/photo.jpg"
-  link4="https://nasa.gov/"
-  tooltip4="Cool Foundation"
-
-  image5="images/photo.jpg"
-  link5="https://nasa.gov/"
-  tooltip5="Cool Institute"
-
-  image6="images/photo.jpg"
-  link6="https://nasa.gov/"
-  tooltip6="Cool Initiative"
-%}

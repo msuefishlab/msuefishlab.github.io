@@ -1,0 +1,11 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2018-01-01 20:52:59+00:00
+title: New Technician Jared Thompson!
+tags: [news]
+---
+![/people/jared/](/images/jared.png)
+
+We are pleased to announce our new technician, Jared Thompson, joined the lab on January 1st, 2018. Welcome Jared!

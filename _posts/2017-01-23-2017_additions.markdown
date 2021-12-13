@@ -1,0 +1,34 @@
+---
+author: Jason Gallant
+author_profile: true
+comments: false
+date: 2017-01-23 16:40:59+00:00
+title: Welcome Colin, Kat, Hope and Nikki
+tags: [news]
+---
+
+Since November, we've added many new faces to the lab!  Welcome to team e-fish!
+
+{:.people_previews}
+![/people/colin/](/images/colin.png)
+
+{:.people_text}
+Colin Diesh joins us from Missouri and will be working as a programmer/bioinformatician technician for the next year.
+
+{:.people_previews}
+![/people/kat/](/images/kat.png)
+
+{:.people_text}
+Katherine (Kat) Shaw will be our new laboratory technician, and she just moved to East Lansing from Montreal, where she worked with Dr. Rudiger Krahe.
+
+{:.people_previews}
+![/people/nikki/](/images/nikki.png)
+
+{:.people_text}
+Nicole (Nikki) Robichaud started as an undergraduate research assistant, working on some of our molecular cloning projects in September 2016,
+
+{:.people_previews}
+![/people/hope/](/images/hope.png)
+
+{:.people_text}
+Hope Healey is our newest member , who joined us in January 2017 to work on the developmental biology of Brienomyrus brachyistius electric organs!
