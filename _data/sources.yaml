@@ -15,7 +15,7 @@
       link: images/picqetal2020.pdf
 
 - id: doi:10.1242/jeb.213447
-  image: https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/223/suppl_1/10.1242_jeb.213447/2/m_jeb21344701.png
+  image: images/m_jeb21344701.png
   tags:
       - Review
   extra-links:
@@ -32,6 +32,7 @@
       link: images/losilla_et_al_2020.pdf
 
 - id: doi:10.1016/j.cub.2018.05.012
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S0960982218306146-fx1.jpg
   tags:
     - Signal Evolution
   extra-links:
@@ -39,6 +40,7 @@
       link: images/immani_et_al_2019.pdf
 
 - id: doi:10.3791/60253
+  image: https://cloudfront.jove.com/files/ftp_upload/60253/60253fig06.jpg
   tags:
       - CRISPR
       - Protocol
@@ -47,6 +49,7 @@
       link: images/constantinou_etal_2019.pdf
 
 - id: doi:10.1093/gbe/evx265
+  image: images/m_evx265f1.jpeg
   tags:
       - Genome
   extra-links:
@@ -54,6 +57,7 @@
       link: images/gallant_et_al_2017.pdf
 
 - id: doi:10.1016/j.jphysparis.2016.10.003
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S0928425716300079-gr1.jpg
   tags:
       - Review
   extra-links:
@@ -61,6 +65,7 @@
       link: images/pitchers_et_al_2016.pdf
 
 - id: doi:10.1186/s12864-015-1288-8
+  image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12864-015-1288-8/MediaObjects/12864_2015_1288_Fig1_HTML.gif?as=webp
   tags:
       - Genome
       - Transcriptome
@@ -69,6 +74,7 @@
       link: images/traeger_et_al_2015.pdf
 
 - id: doi:10.1038/ncomms5817
+  image: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fncomms5817/MediaObjects/41467_2014_Article_BFncomms5817_Fig1_HTML.jpg?as=webp
   extra-links:
   - type: journal
     text: MSU Today
@@ -128,6 +134,7 @@
       - Transcriptome
 
 - id: doi:10.3109/01677063.2013.799670
+  image: https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/ineg20/2013/ineg20.v027.i03/01677063.2013.799670/20150614/images/large/ineg_a_799670_f0006_b.jpeg
   tags:
     - Review
     - Evo-Devo
@@ -136,6 +143,7 @@
       link: images/carlson_and_gallant_2013.pdf
 
 - id: doi:10.1242/jeb.063222
+  image: images/jeb063222f1.jpeg
   tags:
     - Evo-Devo
   extra-links:
@@ -143,6 +151,7 @@
       link: images/gallant_etal_2012.pdf
 
 - id: doi:10.1007/s00359-011-0643-8
+  image: https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00359-011-0643-8/MediaObjects/359_2011_643_Fig5_HTML.gif?as=webp
   tags:
     - Signal Evolution
   extra-links:
