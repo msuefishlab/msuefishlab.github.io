@@ -1,4 +1,5 @@
 - id: doi:10.1111/jfb.14779
+  image: https://onlinelibrary.wiley.com/cms/asset/192098fe-d44b-4a9c-a69c-e870233af510/jfb14779-fig-0001-m.jpg
   tags:
       - Reproduction
   extra-links:
@@ -6,6 +7,7 @@
       link: images/koenigandgallant2021.pdf
 
 - id: doi:10.1111/evo.13953
+  image: https://onlinelibrary.wiley.com/cms/asset/24de0b40-6882-44e7-8598-676ce326907d/evo13953-fig-0001-m.jpg
   tags:
       - Signal Evolution
   extra-links:
@@ -13,6 +15,7 @@
       link: images/picqetal2020.pdf
 
 - id: doi:10.1242/jeb.213447
+  image: https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/223/suppl_1/10.1242_jeb.213447/2/m_jeb21344701.png
   tags:
       - Review
   extra-links:
@@ -20,6 +23,7 @@
       link: images/gallant_and_oconnell_2020.pdf
 
 - id: doi:10.1186/s12862-019-1572-3
+  image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12862-019-1572-3/MediaObjects/12862_2019_1572_Fig2_HTML.png?as=webp
   tags:
       - Transcriptome
       - Signal Evolution

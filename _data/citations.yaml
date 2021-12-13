@@ -3,6 +3,7 @@
 - id: doi:10.1111/jfb.14779
   title: Sperm competition, sexual selection and the diverse reproductive biology
     of Osteoglossiformes
+  image: https://onlinelibrary.wiley.com/cms/asset/192098fe-d44b-4a9c-a69c-e870233af510/jfb14779-fig-0001-m.jpg
   authors:
   - Lauren A. Koenig
   - Jason R. Gallant
@@ -106,7 +107,7 @@
   - Wesley C Warren
   publisher: Genome Biology and Evolution
   date: '2017-12-01'
-  link: https://doi.org/gcpk9x
+  link: http://https://doi.org/gcpk9x
   tags:
   - Genome
   extra-links:
@@ -206,21 +207,21 @@
   extra-links:
   - type: journal
     text: NPR
-    link: http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
+    link: www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
   - type: journal
-    link: http://www.wired.com/2014/06/electric-fish-convergent-evolution
+    link: www.wired.com/2014/06/electric-fish-convergent-evolution
     text: Wired
   - type: journal
-    link: http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
+    link: newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
     text: National Geographic
   - type: journal
-    link: http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
+    link: www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
     text: Reuters
   - type: journal
-    link: http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/
+    link: msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/
     text: MSU Today
   - type: journal
-    link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
+    link: www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
     text: CINA
   - type: pdf
     link: images/gallantetal2014.pdf
@@ -246,13 +247,13 @@
   extra-links:
   - type: journal
     text: The Economist
-    link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
+    link: www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
   - type: journal
     text: LA Times
-    link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
+    link: www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
   - type: journal
     text: Science Magazine
-    link: (http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
+    link: (news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
   - type: pdf
     link: images/kronforstetal2013.pdf
   tags:
