@@ -100,10 +100,10 @@ journal:
   tooltip: Journal
   link: $LINK
 
-preprint:
+pdf:
   icon: far fa-eye
-  text: Preprint
-  tooltip: Preprint
+  text: PDF File
+  tooltip: Download PDF File
   link: $LINK
 
 manubot:
