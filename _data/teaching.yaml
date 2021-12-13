@@ -1,0 +1,29 @@
+- name: Evolution (IBIO445)
+  group: featured
+  link: outreach/ibio445/
+  description: Processes of evolutionary change in animals, plants. Microbes. Population genetics, microevolution, speciation, adaptive radiation, macroevolution. Origin of Homo sapiens.
+
+- name: Evolutionary Biology (PLB/ZOL 849)
+  group: more
+  image: images/photo.jpg
+  link: outreach/evol849/
+  description: Major conceptual, theoretical and empirical questions in evolutionary biology. Readings and lectures are synthesized in student discussions and papers.
+
+- name: Developmental Biology (IBIO 320)
+  group: more
+  image: images/photo.jpg
+  link: outreach/ibio320/
+  description: Principles of development, emphasizing vertebrates. Illustrations from morphological and experimental investigations.
+
+- name: MSU NGS Methods Reading Group (IBIO 890)
+  group: more
+  image: images/photo.jpg
+  link: /outreach/msu_ngs/
+  description: A reading group for graduate students, postdocs and faculty on using next-generation sequencing methods.
+
+- name: Neurobiología de la Conducta Social RNA-seq
+  group: more
+  image: images/photo.jpg
+  link:   https://github.com/jasongallant/nbcs_rnaseq
+  description: A workshop taught in Montevideo, Uruguay in 2019
+  repo: jasongallant/nbcs_rnaseq
