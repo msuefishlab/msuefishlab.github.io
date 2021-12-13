@@ -32,7 +32,6 @@
   extra-links:
   - type: pdf
     link: images/picqetal2020.pdf
-  image: https://onlinelibrary.wiley.com/cms/asset/24de0b40-6882-44e7-8598-676ce326907d/evo13953-fig-0001-m.jpg
 - id: doi:10.1242/jeb.213447
   title: Studying convergent evolution to relate genotype to behavioral phenotype
   authors:
@@ -46,7 +45,6 @@
   extra-links:
   - type: pdf
     link: images/gallant_and_oconnell_2020.pdf
-  image: https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/223/suppl_1/10.1242_jeb.213447/2/m_jeb21344701.png
 - id: doi:10.1186/s12862-019-1572-3
   title: The transcriptional correlates of divergent electric organ discharges in
     Paramormyrops electric fish
@@ -63,7 +61,6 @@
   extra-links:
   - type: pdf
     link: images/losilla_et_al_2020.pdf
-  image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12862-019-1572-3/MediaObjects/12862_2019_1572_Fig2_HTML.png?as=webp
 - id: doi:10.1016/j.cub.2018.05.012
   title: Electrostatic Tuning of a Potassium Channel in Electric Fish
   authors:
@@ -210,21 +207,21 @@
   extra-links:
   - type: journal
     text: NPR
-    link: http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
+    link: www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
   - type: journal
-    link: http://www.wired.com/2014/06/electric-fish-convergent-evolution
+    link: www.wired.com/2014/06/electric-fish-convergent-evolution
     text: Wired
   - type: journal
-    link: http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
+    link: newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
     text: National Geographic
   - type: journal
-    link: http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
+    link: www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
     text: Reuters
   - type: journal
-    link: http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/
+    link: msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/
     text: MSU Today
   - type: journal
-    link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
+    link: www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
     text: CINA
   - type: pdf
     link: images/gallantetal2014.pdf
@@ -250,13 +247,13 @@
   extra-links:
   - type: journal
     text: The Economist
-    link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
+    link: www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
   - type: journal
     text: LA Times
-    link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
+    link: www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
   - type: journal
     text: Science Magazine
-    link: http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
+    link: (news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
   - type: pdf
     link: images/kronforstetal2013.pdf
   tags:
