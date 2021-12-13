@@ -15,35 +15,35 @@
 -id: doi:10.1186/s12864-015-1288-8
 
 -id: doi:10.1038/ncomms5817
-  extra-links:
-      -type: website
-      link: http://msutoday.msu.edu/news/2014/a-single-evolutionary-road-may-lead-to-rome/
+extra-links:
+-type: website
+link: http://msutoday.msu.edu/news/2014/a-single-evolutionary-road-may-lead-to-rome/
 
 -id: doi:10.1126/science.1254432
-  image: images/best_eel_color_corrected_reduced.tif
-  extra-links:
-      -type: website
-      link: http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
-      -type: website
-      link: http://www.wired.com/2014/06/electric-fish-convergent-evolution
-      -type: website
-      link: http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
-      -type: website
-      link: http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
-      -type: website
-      link: http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/)
-      -type: website
-      link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
+image: images/best_eel_color_corrected_reduced.tif
+extra-links:
+-type: website
+link: http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
+-type: website
+link: http://www.wired.com/2014/06/electric-fish-convergent-evolution
+-type: website
+link: http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
+-type: website
+link: http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
+-type: website
+link: http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/)
+-type: website
+link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
 
 -id: doi:10.1016/j.celrep.2013.09.042
-  image: images/S2211124713X00166_covhighres.jpg
-  extra-links:
-    -type: website
-    link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
-    -type: website
-    link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
-    -type: website
-    link: (http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)"
+image: images/S2211124713X00166_covhighres.jpg
+extra-links:
+-type: website
+link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
+-type: website
+link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
+-type: website
+link: (http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)"
 
 -id: doi:10.3109/01677063.2013.799670
 
