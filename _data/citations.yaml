@@ -1,63 +1,207 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1111/jfb.14779
+  title: Sperm competition, sexual selection and the diverse reproductive biology
+    of Osteoglossiformes
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-06-02'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  extra-links:
-  - type: manubot
-    link: https://greenelab.github.io/knowledge-graph-review/
-  tags:
-  - knowledge graphs
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
+  - Lauren A. Koenig
+  - Jason R. Gallant
+  publisher: Journal of Fish Biology
+  date: '2021-05-24'
+  link: https://doi.org/gjzbkw
+- id: doi:10.1111/evo.13953
+  title: Genetic drift does not sufficiently explain patterns of electric signal variation
+    among populations of the mormyrid electric fish <i>Paramormyrops kingsleyae</i>
   authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2019-06-24'
-  link: https://doi.org/c7np
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  repo: greenelab/meta-review
+  - Sophie Picq
+  - Joshua Sperling
+  - Catherine J. Cheng
+  - Bruce A. Carlson
+  - Jason R. Gallant
+  publisher: Evolution
+  date: '2020-04-13'
+  link: https://doi.org/gnrxc7
+- id: doi:10.1242/jeb.213447
+  title: Studying convergent evolution to relate genotype to behavioral phenotype
+  authors:
+  - Jason R. Gallant
+  - Lauren A. O'Connell
+  publisher: Journal of Experimental Biology
+  date: '2020-02-01'
+  link: https://doi.org/gnrxc8
+- id: doi:10.1186/s12862-019-1572-3
+  title: The transcriptional correlates of divergent electric organ discharges in
+    Paramormyrops electric fish
+  authors:
+  - Mauricio Losilla
+  - David Michael Luecke
+  - Jason R. Gallant
+  publisher: BMC Evolutionary Biology
+  date: '2020-01-09'
+  link: https://doi.org/gnrxc9
+- id: doi:10.3791/60253
+  title: 'Silencing the Spark: CRISPR/Cas9 Genome Editing in Weakly Electric Fish'
+  authors:
+  - Savvas J. Constantinou
+  - Linh Nguyen
+  - Frank Kirschbaum
+  - Vielka L. Salazar
+  - Jason R. Gallant
+  publisher: Journal of Visualized Experiments
+  date: '2019-10-27'
+  link: https://doi.org/gnrxdb
+- id: doi:10.1093/gbe/evx265
+  title: The Genome and Adult Somatic Transcriptome of the Mormyrid Electric Fish
+    Paramormyrops kingsleyae
+  authors:
+  - Jason R Gallant
+  - Mauricio Losilla
+  - Chad Tomlinson
+  - Wesley C Warren
+  publisher: Genome Biology and Evolution
+  date: '2017-12-01'
+  link: https://doi.org/gcpk9x
+- id: doi:10.1016/j.jphysparis.2016.10.003
+  title: 'Electric fish genomics: Progress, prospects, and new tools for neuroethology'
+  authors:
+  - William R. Pitchers
+  - Savvas J. Constantinou
+  - Mauricio Losilla
+  - Jason R. Gallant
+  publisher: Journal of Physiology-Paris
+  date: '2016-10-01'
+  link: https://doi.org/gnrxdc
+- id: doi:10.1186/s12864-015-1288-8
+  title: Unique patterns of transcript and miRNA expression in the South American
+    strong voltage electric eel (Electrophorus electricus)
+  authors:
+  - Lindsay L Traeger
+  - Jeremy D Volkening
+  - Howell Moffett
+  - Jason R Gallant
+  - Po-Hao Chen
+  - Carl D Novina
+  - George N Phillips
+  - Rene Anand
+  - Gregg B Wells
+  - Matthew Pinch
+  - "Robert G\xFCth"
+  - Graciela A Unguez
+  - James S Albert
+  - Harold Zakon
+  - Michael R Sussman
+  - Manoj P Samanta
+  publisher: BMC Genomics
+  date: '2015-03-26'
+  link: https://doi.org/f69v2p
+- id: doi:10.1038/ncomms5817
+  title: Ancient homology underlies adaptive mimetic diversity across butterflies
+  authors:
+  - Jason R. Gallant
+  - Vance E. Imhoff
+  - Arnaud Martin
+  - Wesley K. Savage
+  - Nicola L. Chamberlain
+  - Ben L. Pote
+  - Chelsea Peterson
+  - Gabriella E. Smith
+  - Benjamin Evans
+  - Robert D. Reed
+  - Marcus R. Kronforst
+  - Sean P. Mullen
+  publisher: Nature Communications
+  date: '2014-09-08'
+  link: https://doi.org/f6kpzv
   extra-links:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    link: https://github.com/greenelab/meta-review
   - type: website
-    link: http://manubot.org/
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+    link: http://msutoday.msu.edu/news/2014/a-single-evolutionary-road-may-lead-to-rome/
+- id: doi:10.1126/science.1254432
+  title: Genomic basis for the convergent evolution of electric organs
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - Jason R. Gallant
+  - Lindsay L. Traeger
+  - Jeremy D. Volkening
+  - Howell Moffett
+  - Po-Hao Chen
+  - Carl D. Novina
+  - George N. Phillips
+  - Rene Anand
+  - Gregg B. Wells
+  - Matthew Pinch
+  - "Robert G\xFCth"
+  - Graciela A. Unguez
+  - James S. Albert
+  - Harold H. Zakon
+  - Manoj P. Samanta
+  - Michael R. Sussman
+  publisher: Science
+  date: '2014-06-27'
+  link: https://doi.org/f57jmb
+  image: images/best_eel_color_corrected_reduced.tif
   extra-links:
-  - type: preprint
-    link: https://doi.org/10.7287/peerj.preprints.3100v1
-  - type: manubot
-    link: https://greenelab.github.io/scihub-manuscript/
-  - type: source
-    link: https://github.com/greenelab/scihub-manuscript
-    text: Manuscript source
-  - type: source
-    link: https://github.com/greenelab/scihub
-    text: Analyses source
+  - type: website
+    link: http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists
+  - type: website
+    link: http://www.wired.com/2014/06/electric-fish-convergent-evolution
+  - type: website
+    link: http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals
+  - type: website
+    link: http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626
+  - type: website
+    link: http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/)
+  - type: website
+    link: http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos
+- id: doi:10.1016/j.celrep.2013.09.042
+  title: Hybridization Reveals the Evolving Genomic Architecture of Speciation
+  authors:
+  - "Marcus\_R. Kronforst"
+  - "Matthew\_E.B. Hansen"
+  - "Nicholas\_G. Crawford"
+  - "Jason\_R. Gallant"
+  - Wei Zhang
+  - "Rob\_J. Kulathinal"
+  - "Durrell\_D. Kapan"
+  - "Sean\_P. Mullen"
+  publisher: Cell Reports
+  date: '2013-11-01'
+  link: https://doi.org/gmq97x
+  image: images/S2211124713X00166_covhighres.jpg
+  extra-links:
+  - type: website
+    link: http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things
+  - type: website
+    link: http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)
+  - type: website
+    link: (http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)
+- id: doi:10.3109/01677063.2013.799670
+  title: 'From Sequence to Spike to Spark: Evo-devo-neuroethology of Electric Communication
+    in Mormyrid Fishes'
+  authors:
+  - Bruce A. Carlson
+  - Jason R. Gallant
+  publisher: Journal of Neurogenetics
+  date: '2013-06-26'
+  link: https://doi.org/gnrxdd
+- id: doi:10.1242/jeb.063222
+  title: Differential expression of genes and proteins between electric organ and
+    skeletal muscle in the mormyrid electric fish <i>Brienomyrus brachyistius</i>
+  authors:
+  - Jason R. Gallant
+  - Carl D. Hopkins
+  - David L. Deitcher
+  publisher: Journal of Experimental Biology
+  date: '2012-07-15'
+  link: https://doi.org/gnrxdf
+- id: doi:10.1007/s00359-011-0643-8
+  title: Signal variation and its morphological correlates in Paramormyrops kingsleyae
+    provide insight into the evolution of electrogenic signal diversity in mormyrid
+    electric fish
+  authors:
+  - Jason R. Gallant
+  - Matthew E. Arnegard
+  - John P. Sullivan
+  - Bruce A. Carlson
+  - Carl D. Hopkins
+  publisher: Journal of Comparative Physiology A
+  date: '2011-04-20'
+  link: https://doi.org/c85zzr
