@@ -2,7 +2,9 @@
   image: images/evodevo.png
   tags:
       - Evo-Devo
-  link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
+  extra-links:
+    - type: pdf
+      link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
 
 - id: doi:10.1111/jfb.14779
   image: https://onlinelibrary.wiley.com/cms/asset/192098fe-d44b-4a9c-a69c-e870233af510/jfb14779-fig-0001-m.jpg
