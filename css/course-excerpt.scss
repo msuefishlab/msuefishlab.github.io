@@ -1,0 +1,20 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+.course_excerpt {
+  margin: 20px 0;
+  @include trim-v-margins;
+
+  & > *:first-child {
+    font-weight: $semi-bold;
+    text-align: left;
+  }
+
+  & > div {
+    text-align: left;
+  }
+}

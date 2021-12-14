@@ -1,0 +1,29 @@
+- name: Fieldwork
+  group: featured
+  link: projects/fieldwork.html
+  image: images/iboundji.jpg
+  description: We have ongoing projects to survey the diversity of macroinvertebrates and electric fish from various streams throughout Gabon, West-Central Africa.
+
+- name: Evolution and Development of Electric Organs
+  group: featured
+  image: images/evodevo.png
+  link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
+  description: Electric organs have evolved from skeletal muscle or skeletal-muscle precursors more than six times within vertebrates.  What are the genetic and transcriptional changes needed to evolve electric organs?
+
+- name: Genomic, Transcriptomic and Functional Tools
+  group: featured
+  image: images/efishbros.png
+  link: https://efishgenomics.integrativebiology.msu.edu
+  description: We build tools to enable genotype-to-phenotype studies in weakly electric fish.  Check out all of our datasets and tools at our sister site!
+
+- name: Evolution of Electric Signal Diversity
+  group: featured
+  image: images/paramormyrops.png
+  link: /projects/picqetal2020.pdf
+  description: What are the proximate and ultimate causes of electric signal evolution within mormyrid electric fish?
+
+- name: Electric Fish Reproduction
+  group: featured
+  image: images/spawn.png
+  link:   images/koenigandgallant2021.pdf
+  description: Our newest set of projects focuses on the unusual reproduction of mormyrid fish, and their mechanisms of sex determination.  Stay tuned!
