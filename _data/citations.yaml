@@ -10,6 +10,9 @@
   image: images/evodevo.png
   tags:
   - Evo-Devo
+  extra-links:
+  - type: pdf
+    link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
 - id: doi:10.1111/jfb.14779
   title: Sperm competition, sexual selection and the diverse reproductive biology
     of Osteoglossiformes
