@@ -1,5 +1,15 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
+- id: doi:10.1007/978-3-030-29105-1_4
+  title: The Evolution and Development of Electric Organs
+  authors:
+  - Jason R. Gallant
+  publisher: Springer Handbook of Auditory Research
+  date: '2019-01-01'
+  link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
+  image: images/evodevo.png
+  tags:
+  - Evo-Devo
 - id: doi:10.1111/jfb.14779
   title: Sperm competition, sexual selection and the diverse reproductive biology
     of Osteoglossiformes
