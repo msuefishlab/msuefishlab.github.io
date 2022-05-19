@@ -1,6 +1,6 @@
 ---
 name: Emma Elferdink
-image: images/elise.png
+image: images/emma.png
 role: undergrad
 links:
   email: elferdin@msu.edu
