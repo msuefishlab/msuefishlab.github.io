@@ -1,6 +1,7 @@
 ---
 name: Aisha Narayan
 image: images/aisha.png
+group: alumni
 role: undergrad
 description: Undergraduate
 links:

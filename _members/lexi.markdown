@@ -2,6 +2,7 @@
 name: Lexi Nadolsky
 image: images/lexi.png
 role: undergrad
+group: alumni
 description: Undergraduate
 group:
 links:

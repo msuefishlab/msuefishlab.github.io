@@ -2,6 +2,7 @@
 name: Kristen Lounsbury
 image: images/kristen.png
 role: undergrad
+group: alumni
 description: Undergraduate
 group:
 links:
