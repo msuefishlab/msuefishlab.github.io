@@ -4,7 +4,6 @@ image: images/lexi.png
 role: undergrad
 group: alumni
 description: Undergraduate
-group:
 links:
   email: nadols15@msu.edu
 ---

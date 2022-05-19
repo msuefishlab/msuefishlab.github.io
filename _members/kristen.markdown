@@ -4,7 +4,6 @@ image: images/kristen.png
 role: undergrad
 group: alumni
 description: Undergraduate
-group:
 links:
   email: lounsb10@msu.edu
 ---

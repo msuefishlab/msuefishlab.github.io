@@ -3,7 +3,7 @@ name: Dr. David Luecke
 image: images/david.png
 role: postdoc
 description: Postdoc
-group:
+group: alumni
 links:
   email: lueckeda@msu.edu
 ---
