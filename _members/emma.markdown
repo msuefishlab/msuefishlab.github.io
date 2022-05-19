@@ -1,0 +1,10 @@
+---
+name: Emma Elferdink
+image: images/elise.png
+role: undergrad
+links:
+  email: elferdin@msu.edu
+---
+
+
+Emma is a professorial assistant working in the lab on the comparative energetics of mormyrid tissues.
