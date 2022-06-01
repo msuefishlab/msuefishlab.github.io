@@ -1,3 +1,11 @@
+- id: doi:10.1126/sciadv.abm2970
+  image: images/bgaud_cover1_candidate.jpg
+  tags:
+      - Evo-Devo
+  extra-links:
+    - type: pdf
+      link: images/sciadv.abm2970.pdf
+
 - id: doi:10.1007/978-3-030-29105-1_4
   image: images/evodevo.png
   tags:
