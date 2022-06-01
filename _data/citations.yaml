@@ -1,5 +1,25 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
+- id: doi:10.1126/sciadv.abm2970
+  title: Divergent cis-regulatory evolution underlies the convergent loss of sodium
+    channel expression in electric fish
+  authors:
+  - Sarah LaPotin
+  - Mary E. Swartz
+  - David M. Luecke
+  - Savvas J. Constantinou
+  - Jason R. Gallant
+  - Johann K. Eberhart
+  - Harold H. Zakon
+  publisher: Science Advances
+  date: '2022-06-03'
+  link: https://doi.org/gp8prp
+  image: images/bgaud_cover1_candidate.jpg
+  tags:
+  - Evo-Devo
+  extra-links:
+  - type: pdf
+    link: images/sciadv.abm2970.pdf
 - id: doi:10.1007/978-3-030-29105-1_4
   title: The Evolution and Development of Electric Organs
   authors:
