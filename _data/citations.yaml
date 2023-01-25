@@ -1,5 +1,18 @@
 # GENERATED AUTOMATICALLY, DO NOT EDIT
 
+- id: doi:10.1093/g3journal/jkac331
+  title: Molecular evolution of the ependymin-related gene <i>epdl2</i> in African
+    weakly electric fish
+  authors:
+  - Mauricio Losilla
+  - Jason R Gallant
+  publisher: G3 Genes|Genomes|Genetics
+  date: '2022-12-19'
+  link: https://doi.org/grpns4
+  image: images/epdltree.png
+  tags:
+  - Signal Evolution
+  - Genome
 - id: doi:10.1126/sciadv.abm2970
   title: Divergent cis-regulatory evolution underlies the convergent loss of sodium
     channel expression in electric fish
