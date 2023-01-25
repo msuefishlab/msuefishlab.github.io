@@ -1,3 +1,9 @@
+- id: doi:10.1093/g3journal/jkac331
+  image: images/epdltree.png
+  tags:
+    - Signal Evolution
+    - Genome
+
 - id: doi:10.1126/sciadv.abm2970
   image: images/bgaud_cover1_candidate.jpg
   tags:
