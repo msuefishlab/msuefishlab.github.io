@@ -2,6 +2,7 @@
 name: Emma Elferdink
 image: images/emma.png
 role: undergrad
+group: alumni
 links:
   email: elferdin@msu.edu
 ---

@@ -1,0 +1,11 @@
+---
+name: Christian Roberts
+image: images/christian.jpg
+group:
+description: Post-Bac Research Assistant
+role: undergrad
+links:
+  email: Robe1109@msu.edu
+---
+
+Christian is a recently graduated senior from Michigan State University.
