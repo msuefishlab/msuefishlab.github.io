@@ -1,6 +1,6 @@
 ---
 name: Mary Gardella
-image: images/mary.jpg
+image: images/mary.jpeg
 group:
 description: Fish Care Specialist
 role: technician

@@ -1,6 +1,6 @@
 ---
 name: Arely Cruz-Perez
-image: images/arely.jpg
+image: images/arely.jpeg
 role: technician
 description: Research Technician
 links:

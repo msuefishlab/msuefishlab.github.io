@@ -1,6 +1,6 @@
 ---
 name: Christian Roberts
-image: images/christian.jpg
+image: images/christian.jpeg
 group:
 description: Post-Bac Research Assistant
 role: undergrad
