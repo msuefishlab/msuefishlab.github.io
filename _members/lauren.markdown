@@ -1,5 +1,5 @@
 ---
-name: Lauren Koenig
+name: Dr. Lauren Koenig
 image: images/lauren.png
 role: phd
 group: alumni

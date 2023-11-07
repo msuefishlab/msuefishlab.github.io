@@ -2,7 +2,7 @@
 name: Alyssa Saunders
 image: images/alyssa.jpg
 group:
-description: M.S. Student
+description: Ph.D. Student
 role: phd
 links:
   email: saund165@msu.edu

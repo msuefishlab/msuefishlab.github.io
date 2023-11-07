@@ -1,5 +1,5 @@
 ---
-name: Savvas Constantinou
+name: Dr. Savvas Constantinou
 image: images/savvas.png
 role: phd
 group: alumni
