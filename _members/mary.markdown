@@ -1,7 +1,7 @@
 ---
 name: Mary Gardella
 image: images/mary.jpeg
-group:
+group: alumni
 description: Fish Care Specialist
 role: technician
 links:
