@@ -1,6 +1,6 @@
 ---
 comments: false
-date: 2025-04-08 15:00:00 +0000
+date: 2025-04-21 15:00:00 +0000
 title: Rita Gorsuch Receives 1st Place at UURAF!
 tags:
   - news
