@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="search_box">
   <input
     class="search_input"
@@ -7,5 +8,21 @@
   />
   <button disabled data-tooltip="Clear search" onclick="onSearchClear()">
     <i class="fas fa-search"></i>
+=======
+<div class="search-box">
+  <input
+    type="text"
+    class="search-input"
+    oninput="onSearchInput(this)"
+    placeholder="Search items on this page"
+  />
+  <button
+    disabled
+    data-tooltip="Clear search"
+    aria-label="clear search"
+    onclick="onSearchClear()"
+  >
+    {% include icon.html icon="fa-solid fa-magnifying-glass" %}
+>>>>>>> upstream/main
   </button>
 </div>

@@ -7,7 +7,7 @@ nav:
 
 # <i class="fas fa-tools"></i>Current Projects
 
-The links below represent our current areas of research focus.  Don't see something here you think ought to be here?  Inquire about joining our lab!
+The links below represent our current areas of research focus. Don't see something here you think ought to be here? Inquire about joining our lab!
 
 {% include search-info.html %}
 

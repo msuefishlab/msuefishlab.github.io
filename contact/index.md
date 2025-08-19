@@ -41,8 +41,6 @@ We are located on the 1st floor of [Giltner Hall](https://maps.msu.edu/interacti
 
 {% include section.html %}
 
-
-
 {% capture col1 %}
 {%
   include figure.html
@@ -51,6 +49,7 @@ We are located on the 1st floor of [Giltner Hall](https://maps.msu.edu/interacti
 %}
 {% endcapture %}
 {% capture col2 %}
+
 ### <i class="fas fa-mail-bulk"></i>Mailing Address
 
 Dr. Jason Gallant  

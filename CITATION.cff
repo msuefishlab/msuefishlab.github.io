@@ -1,6 +1,9 @@
-# GitHub citation metadata for lab-website-template itself
+# citation metadata for the template itself
 
-cff-version: 1.2.0
+title: "Lab Website Template"
+version: 1.3.7
+date-released: 2025-07-31
+url: "https://github.com/greenelab/lab-website-template"
 authors:
   - family-names: "Rubinetti"
     given-names: "Vincent"
@@ -8,7 +11,4 @@ authors:
   - family-names: "Greene"
     given-names: "Casey"
     orcid: "https://orcid.org/0000-0001-8713-9213"
-title: "Lab Website Template"
-version: 0.4.1
-date-released: 2021-08-23
-url: "https://github.com/greenelab/lab-website-template"
+cff-version: 1.2.0
