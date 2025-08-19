@@ -1,7 +1,7 @@
 ---
 name: Rita Gorsuch
 image: images/rita.jpeg
-group:
+group: alumni
 description: Fish Care Specialist
 role: technician
 links:

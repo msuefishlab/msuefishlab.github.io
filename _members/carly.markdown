@@ -1,7 +1,7 @@
 ---
 name: Carly Ader
 image: images/carly.jpg
-group:
+group: alumni
 description: Undergraduate
 role: undergrad
 links:

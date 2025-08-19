@@ -1,7 +1,7 @@
 ---
 name: Jonah Branding
 image: images/jonah.jpg
-group:
+group: alumni
 description: M.S. Student
 role: phd
 links:
