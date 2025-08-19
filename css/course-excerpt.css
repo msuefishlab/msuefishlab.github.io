@@ -1,0 +1,18 @@
+.course_excerpt {
+  margin: 20px 0;
+}
+.course_excerpt:first-child {
+  margin-top: 0;
+}
+.course_excerpt:last-child {
+  margin-bottom: 0;
+}
+.course_excerpt > *:first-child {
+  font-weight: 600;
+  text-align: left;
+}
+.course_excerpt > div {
+  text-align: left;
+}
+
+/*# sourceMappingURL=course-excerpt.css.map */

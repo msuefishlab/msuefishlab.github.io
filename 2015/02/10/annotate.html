@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- put your analytics (e.g. Google Analytics) tracking code here -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17457337-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-17457337-5');
+</script>
+
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+--><script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<p>
+
+  &lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</p>
+<p> HEAD
+
+
+
+
+
+</p>
+<title>MSU Electric Fish Lab - Running MAKER Genome Annotation on STARCLUSTER</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- https://metatags.io/ -->
+<meta name="title" content="MSU Electric Fish Lab - Running MAKER Genome Annotation on STARCLUSTER">
+<meta name="description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:title" content="MSU Electric Fish Lab - Running MAKER Genome Annotation on STARCLUSTER">
+<meta property="og:description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="MSU Electric Fish Lab - Running MAKER Genome Annotation on STARCLUSTER">
+<meta property="twitter:description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" href="https://efish.integrativebiology.msu.edu/feed.xml">
+
+<!-- https://developers.google.com/web/fundamentals/native-hardware/click-to-call#disable_auto-detection_when_necessary -->
+<meta name="format-detection" content="telephone=no">
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Running MAKER Genome Annotation on STARCLUSTER | MSU Electric Fish Lab</title>
+
+<link rel="icon" href="">
+
+<meta name="title" content="Running MAKER Genome Annotation on STARCLUSTER">
+<meta name="description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+
+<meta property="og:title" content="Running MAKER Genome Annotation on STARCLUSTER">
+<meta property="og:site_title" content="MSU Electric Fish Lab">
+<meta property="og:description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="og:url" content="https://efish.integrativebiology.msu.edu">
+<meta property="og:image" content="">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="Running MAKER Genome Annotation on STARCLUSTER">
+<meta property="twitter:description" content="An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="twitter:url" content="https://efish.integrativebiology.msu.edu">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="">
+
+
+  <meta name="author" content="Jason Gallant">
+  <meta property="og:type" content="article">
+  <meta property="og:updated_time" content="2025-08-19T01:50:26+00:00">
+  <meta property="article:published_time" content="2015-02-10T19:52:40+00:00">
+  <meta property="article:modified_time" content="2025-08-19T01:50:26+00:00">
+  <meta name="revised" content="2025-08-19T01:50:26+00:00">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "BlogPosting",
+      "author": { "@type": "Person", "name": "Running MAKER Genome Annotation on STARCLUSTER" },
+      "datePublished": "2015-02-10T19:52:40+00:00",
+      "dateModified": "2025-08-19T01:50:26+00:00",
+    
+    "name": "Running MAKER Genome Annotation on STARCLUSTER",
+    "description": "An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
+    "headline": "Running MAKER Genome Annotation on STARCLUSTER",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "" }
+    },
+    "url": "https://efish.integrativebiology.msu.edu"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://efish.integrativebiology.msu.edu/feed.xml">
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+
+  <!-- Google Fonts -->
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+<link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+=======
+<!-- automatically get url from fonts used in theme file -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+
+<link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet">
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+</noscript>
+
+  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<!-- site-wide css styles -->
+      <link href="/css/all.css" rel="stylesheet">
+      <link href="/css/anchor.css" rel="stylesheet">
+      <link href="/css/background.css" rel="stylesheet">
+      <link href="/css/banner.css" rel="stylesheet">
+      <link href="/css/button.css" rel="stylesheet">
+      <link href="/css/card.css" rel="stylesheet">
+      <link href="/css/citation.css" rel="stylesheet">
+      <link href="/css/code.css" rel="stylesheet">
+      <link href="/css/course-excerpt.css" rel="stylesheet">
+      <link href="/css/feature.css" rel="stylesheet">
+      <link href="/css/figure.css" rel="stylesheet">
+      <link href="/css/footer.css" rel="stylesheet">
+      <link href="/css/form.css" rel="stylesheet">
+      <link href="/css/gallery.css" rel="stylesheet">
+      <link href="/css/header.css" rel="stylesheet">
+      <link href="/css/heading.css" rel="stylesheet">
+      <link href="/css/highlight.css" rel="stylesheet">
+      <link href="/css/icon.css" rel="stylesheet">
+      <link href="/css/image.css" rel="stylesheet">
+      <link href="/css/input.css" rel="stylesheet">
+      <link href="/css/link.css" rel="stylesheet">
+      <link href="/css/list.css" rel="stylesheet">
+      <link href="/css/paragraph.css" rel="stylesheet">
+      <link href="/css/portrait.css" rel="stylesheet">
+      <link href="/css/post-excerpt.css" rel="stylesheet">
+      <link href="/css/post-info.css" rel="stylesheet">
+      <link href="/css/post-nav.css" rel="stylesheet">
+      <link href="/css/quote.css" rel="stylesheet">
+      <link href="/css/role.css" rel="stylesheet">
+      <link href="/css/rule.css" rel="stylesheet">
+      <link href="/css/search-box.css" rel="stylesheet">
+      <link href="/css/search-info.css" rel="stylesheet">
+      <link href="/css/section.css" rel="stylesheet">
+      <link href="/css/table.css" rel="stylesheet">
+      <link href="/css/tags.css" rel="stylesheet">
+      <link href="/css/tooltip.css" rel="stylesheet">
+      <link href="/css/two-col.css" rel="stylesheet">
+      <link href="/css/util.css" rel="stylesheet">=======
+<!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+
+<!-- include all css in styles folder -->
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+
+
+
+  
+    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<header data-dark="true">
+  <a href="/" class="logo_row" data-tooltip="Home">
+    <img src="/images/efishlab_logo_cropped.png" class="logo" alt="Logo image">
+    
+      <span class="logo_text">MSU Electric Fish Lab</span>
+    
+  </a>
+  <nav class="nav_row"><a class="link" href="/research/" data-tooltip="Published works" data-text="true" data-style=""><span class="truncate">Publications</span></a><a class="link" href="/projects/" data-tooltip="See what we're working on" data-text="true" data-style=""><span class="truncate">Projects</span></a><a class="link" href="/outreach/" data-tooltip="Outreach and Education" data-text="true" data-style=""><span class="truncate">Education</span></a><a class="link" href="/team/" data-tooltip="About our team" data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/blog/" data-tooltip="News from the lab" data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location" data-text="true" data-style=""><span class="truncate">Contact</span></a>=======
+
+
+
+
+
+
+
+
+<header class="background" style="--image: url('')" data-dark="true">
+  <a href="/" class="home">
+    
+    
+      <span class="title-text" data-tooltip="Home">
+        
+          <span class="title">MSU Electric Fish Lab</span>
+        
+        
+      </span>
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/research/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/projects/" data-tooltip="See what we're working on">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/outreach/" data-tooltip="Outreach and Education">
+          Education
+        </a>
+      
+    
+      
+        <a href="/team/" data-tooltip="About our team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/blog/" data-tooltip="News from the lab">
+          News
+        </a>
+      
+    
+      
+        <a href="/contact/" data-tooltip="Email, address, and location">
+          Contact
+        </a>
+      
+    
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+  </nav>
+</header>
+
+    <main>
+      <section class="background"><h1>Running MAKER Genome Annotation on STARCLUSTER</h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<div class="post_info">
+<span>
+      <i class="fas fa-feather-alt"></i>Jason Gallant</span><span>
+      <i class="far fa-calendar-alt"></i>
+      <span>February 10, 2015</span>
+    </span>
+</div>
+<div class="tags" data-link="https://efish.integrativebiology.msu.edu/blog"><a href='https://efish.integrativebiology.msu.edu/blog?search="tag:code"' class="tag" data-tooltip='Show items with the tag "code"'>code</a></div>=======
+<div class="post-info">
+  
+    
+    
+      
+      
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>jason gallant</span>
+        </span>
+      
+    
+  
+
+  
+  
+
+  
+
+  
+</div>
+
+
+  <div class="tags" data-link="https://efish.integrativebiology.msu.edu/blog"><a href='https://efish.integrativebiology.msu.edu/blog?search="tag:code"' class="tag" data-tooltip='Show items with the tag "code"'>code</a></div>
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+</section><section class="background">
+
+<p>I’ve been running an experiment trying to implement AWS in some of our bioinformatics projects.  After surveying some nice reviews (Yandell and Ence, 2012), I’ve decided on the MAKER pipeline to get things started.  The basic approach will be to take orthologous proteins from other organisms, together with existing transcriptome data (assembled by cufflinks), and use this as a means of pulling out putative coding regions to train an ab-inito gene predictor (such as SNAP or Augustus) to build gene models.  Given the numerous BLAST steps that are involved in aligning this data, as well as processing it, the folks in the Yandell lab made MAKER parallel, through the use of either OpenMPI or MPICH2.  Although we have an installation of the MAKER software on campus, it hasn’t been updated in a while, and there is something of a queue run very long jobs with lots of processors– I wondered if there were other options.</p>
+
+<p>Many folks have touted the virtues of using Amazon Web Services (AWS) for bioinformatics (e.g. here)– it is great for making portable machines for bioinformatics analysis.  For the uninitiated, AWS ‘leases’ computing time to anyone with a credit card for the purposes of data crunching.  It’s tremendously handy, but bioinformaticians typically deploy only one machine for their analysis– not very handy for taking advantage of the MPI capabilities of MAKER.    Certainly,  someone with a strong background in computer science or programming could set up a cluster using AWS, but who has the time?  Some quick googling uncovered a tremendous software package called, Starcluster, essentially a script that takes all of the pain out of this process.  It’s software written by folks at MIT, and with some minor edits to a configuration file, you can get your own cluster up and running in a matter of minutes.</p>
+
+<p>What follows is an assembly of links and advice in getting MAKER running on AWS.  The system that I’ve been able to assemble through a lot of trial and error works fairly reliably on large eukaryotic genomes.   By my estimation, a full run (including repeat masking, protein BLASTs, ab-inito gene prediction, etc.) takes about 7-8 hours on 200 nodes with 4 processors each.  Not too shabby.</p>
+
+<h2 id="step-1-set-up-starcluster-and-amazon-ec2">Step 1: Set up Starcluster and Amazon EC2</h2>
+
+<p>Rather than reinvent the wheel, check out <a href="http://mpitutorial.com/about/">Wes Kendall</a>’s awesome tutorial on how to set up AWS and Starcluster to launch your first cluster.</p>
+
+<p><a href="http://mpitutorial.com/launching-an-amazon-ec2-mpi-cluster/">http://mpitutorial.com/launching-an-amazon-ec2-mpi-cluster/</a></p>
+
+<p>Starcluster also maintains a quick start guide that is also quite nice if you’d like to follow that instead, though it lacks the information about getting set up with AWS, if you’ve never used it before.</p>
+
+<p><strong>http://star.mit.edu/cluster/docs/latest/quickstart.html</strong></p>
+
+<p>Once you’ve started and terminated your first cluster, come back here and we will play with the config files.</p>
+
+<h2 id="step-2-set-upregion-and-data-volumes">Step 2: Set up region and data volumes</h2>
+
+<p>You’ll want to put your data somewhere– the instances that you will create have what is called “ephemeral” storage, meaning that the memory is cleared each time the computer is started up.  To keep your data, you’ll have to create a volume to store it.  EC2 makes this very easy.  Go to your EC2 dashboard, and click on “Volumes” under Elastic Block Store.  Click “Create Volume” at the top.  Choose a General Purpose (SSD) drive, and request an appropriate size (you’ll want to be able to accommodate the size of the data that you are using in MAKER, as well as the output data.  My data drive is 300GB, which is more than ample room (probably overkill).   Pricing is per GB, and varies regionally.  The information on pricing is located <a href="http://aws.amazon.com/ebs/pricing/">here</a>.   You’ll also want to choose an availability zone to work within– EBS volumes are not accessible outside their availability zone.  Remember the availability zone that you choose for your data volume (it matters not).  When you click “create” you’ll be returned to a list of the volumes you’ve created– when the creation process is complete, you’ll be able to name your volume something descriptive (e.g. “data”).  Note the volume ID.</p>
+
+<p>Next,  you’ll want starcluster to play nicely with your newly created volume.  To do this, you simply need to edit the availability zone settings of your cluster by editing the configuration file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AWS_REGION_NAME = us-east-1d   #this matches the availability zone of your data volume
+AWS_REGION_HOST = ec2.us-east-1.amazonaws.com  # this is found by looking on AWS (link below)
+</code></pre></div></div>
+
+<p>The region hosts are maintained on <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html">this</a> list by Amazon.</p>
+
+<h2 id="step-3-configure-mpi-and-install-maker-onto-an-ami">Step 3: Configure MPI and Install MAKER onto an AMI</h2>
+
+<p>With that out of the way, we must now get down to the business of running MAKER on your new cluster.  To start with, we want install MAKER on our machine.  A nice overview of the process is located here:</p>
+
+<p><a href="http://star.mit.edu/cluster/docs/0.93.3/manual/create_new_ami.html">http://star.mit.edu/cluster/docs/0.93.3/manual/create_new_ami.html</a></p>
+
+<p>First we determine the available images (which contain all of the stuff that makes starcluster run) - at the time of publication, this is what “starcluster list public” gives us:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ starcluster listpublic
+
+StarCluster - (http://star.mit.edu/cluster) (v. 0.95.6)
+Software Tools for Academics and Researchers (STAR)
+Please submit bug reports to starcluster@mit.edu
+
+&gt;&gt;&gt; Listing all public StarCluster images...
+
+32bit Images:
+-------------
+[0] ami-9bf9c9f2 us-east-1d starcluster-base-ubuntu-13.04-x86 (EBS)
+[1] ami-7c5c3915 us-east-1d starcluster-base-ubuntu-12.04-x86 (EBS)
+[2] ami-899d49e0 us-east-1d starcluster-base-ubuntu-11.10-x86 (EBS)
+[3] ami-8cf913e5 us-east-1d starcluster-base-ubuntu-10.04-x86-rc3
+[4] ami-d1c42db8 us-east-1d starcluster-base-ubuntu-9.10-x86-rc8
+
+64bit Images:
+--------------
+[0] ami-3393a45a us-east-1d starcluster-base-ubuntu-13.04-x86_64 (EBS)
+[1] ami-6b211202 us-east-1d starcluster-base-ubuntu-13.04-x86_64-hvm (HVM-EBS)
+[2] ami-52a0c53b us-east-1d starcluster-base-ubuntu-12.04-x86_64-hvm (HVM-EBS)
+[3] ami-765b3e1f us-east-1d starcluster-base-ubuntu-12.04-x86_64 (EBS)
+[4] ami-4583572c us-east-1d starcluster-base-ubuntu-11.10-x86_64-hvm (HVM-EBS)
+[5] ami-999d49f0 us-east-1d starcluster-base-ubuntu-11.10-x86_64 (EBS)
+[6] ami-0af31963 us-east-1d starcluster-base-ubuntu-10.04-x86_64-rc1
+[7] ami-2faa7346 us-east-1d starcluster-base-ubuntu-10.04-x86_64-qiime-1.4.0 (EBS)
+[8] ami-8852a0e1 us-east-1d starcluster-base-ubuntu-10.04-x86_64-hadoop
+[9] ami-a5c42dcc us-east-1d starcluster-base-ubuntu-9.10-x86_64-rc4
+[10] ami-06a75a6f us-east-1d starcluster-base-centos-5.4-x86_64-ebs-hvm-gpu-hadoop-rc2 (HVM-EBS)
+[11] ami-12b6477b us-east-1d starcluster-base-centos-5.4-x86_64-ebs-hvm-gpu-rc2 (HVM-EBS)
+
+total images: 17
+</code></pre></div></div>
+
+<p>The first 64-bit image should work perfectly fine for our purposes.  Noting the AMI number (ami-3393a45a), we will tell starcluster to start a one-node cluster for us to download our software on.  We’ll use an m1.xlarge machine for this, although it doesn’t really matter so long as it is a 64-bit machine.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster start -s 1 -i m1.xlarge -n ami-3393a45a software_install
+</code></pre></div></div>
+
+<p>Once starcluster is done, you can connect with the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster sshmaster software_install
+</code></pre></div></div>
+
+<p>It is important to note at this time that you are logged in as the “root” user when connecting by this method.  The root user’s home directory “/root” is NOT shared via NFS to other nodes on the system, which means trouble for using MPI with your installed programs.  The home folder of the cluster user (set in your configuration file by default to be “sgeadmin”) is, however shared by NFS.  That’s where you want to put MAKER.  Go to the following website to register and obtain the download link for MAKER:</p>
+
+<p><a href="http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi">http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi</a></p>
+
+<p>Once you’ve obtained the download link,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/sgeadmin/
+wget http://link.to/maker_software  #you obtain the link by registering with MAKER
+tar -zxvf maker-2.31.8.tgz
+</code></pre></div></div>
+
+<p>Next, there seems to be a bit of a bug with the MPI installation using the current base AMI (which should be OpenMPI by default).  To set this properly:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>update-alternatives --config mpi
+</code></pre></div></div>
+
+<p>This will give you the following menu.  You will want to choose “2” (OpenMPI).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There are 2 choices for the alternative mpi (providing /usr/include/mpi).
+
+  Selection    Path                      Priority   Status
+------------------------------------------------------------
+* 0            /usr/include/mpich2        40        auto mode
+  1            /usr/include/mpich2        40        manual mode
+  2            /usr/lib/openmpi/include   40        manual mode
+
+Press enter to keep the current choice[*], or type selection number:&lt;span style="background-color: #f4f4f4;"&gt;2&lt;/span&gt;
+</code></pre></div></div>
+
+<p>Now that OpenMPI is set, you’ll want to get the path to the “libmpi.so” for OpenMPI.  Verify this by typing</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ update-alternatives --display mpi
+
+...
+/usr/lib/openmpi/include - priority 40
+ slave libmpi++.so: /usr/lib/openmpi/lib/libmpi_cxx.so
+ slave libmpi.so: /usr/lib/openmpi/lib/libmpi.so
+ slave libmpif77.so: /usr/lib/openmpi/lib/libmpi_f77.so
+ slave libmpif90.so: /usr/lib/openmpi/lib/libmpi_f90.so
+ slave mpiCC: /usr/bin/mpic++.openmpi
+ slave mpiCC.1.gz: /usr/share/man/man1/mpiCC.openmpi.1.gz
+ slave mpic++: /usr/bin/mpic++.openmpi
+ slave mpic++.1.gz: /usr/share/man/man1/mpic++.openmpi.1.gz
+ slave mpicc: /usr/bin/mpicc.openmpi
+ slave mpicc.1.gz: /usr/share/man/man1/mpicc.openmpi.1.gz
+ slave mpicxx: /usr/bin/mpic++.openmpi
+ slave mpicxx.1.gz: /usr/share/man/man1/mpicxx.openmpi.1.gz
+ slave mpif77: /usr/bin/mpif77.openmpi
+ slave mpif77.1.gz: /usr/share/man/man1/mpif77.openmpi.1.gz
+ slave mpif90: /usr/bin/mpif90.openmpi
+ slave mpif90.1.gz: /usr/share/man/man1/mpif90.openmpi.1.gz
+</code></pre></div></div>
+
+<p>We can see here that the path to libmpi.so is: “/usr/lib/openmpi/lib/libmpi.so”.  You’ll need to set some environment variables next, before you go any further.  Open ~/.bashrc with your favorite text editor and add the following lines at the bottom:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export LD_PRELOAD=/usr/lib/openmpi/lib/libmpi.so
+export MPI_MCA_mpi_warn_on_fork=0
+</code></pre></div></div>
+
+<p>Close your .bashrc file and reload it by typing the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.bashrc
+</code></pre></div></div>
+
+<p>Now we’re ready to rock!  You should be able to install Maker by following the standard build instructions included in the distribution:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/sgeadmin/maker/src
+perl Build.PL
+
+## Follow command prompts.  
+## Choose Y for Maker for MPI, and use default paths for MPI.
+
+./Build install deps
+./Build installexes
+#Note that you'll have to register at repbase in order to download
+#the repeatmasker libraries
+./Build install
+</code></pre></div></div>
+
+<p>You should now have a working installation of MAKER!</p>
+
+<p>Once you’re satisfied that everything is installed correctly, you’ll want to save the image in order to use it on your cluster.  Go to the AWS EC2 control panel, and click on “Instances”.  Select your “master” node from the list, and click “Actions&gt;Image&gt;Create Image”.  Give your image a name and description, and click “Create Image”.  Note that any volumes attached to the machine will also be imaged by default.  You can remove these safely to make the smallest image possible (click the little x’s).</p>
+
+<p>Once the image is completed, you’ll be able to find the AMI id under “Images&gt;AMIs”.</p>
+
+<h2 id="step-4-configure-your-cluster">Step 4: Configure Your Cluster</h2>
+
+<p>You’re going to want to make some changes to the starcluster configuration file.  Cluster configuration is based on a template system which is fully extensible, which means you don’t have to retype all of the configuration options, only the ones you want to change.  We’ll base our new template on the “default” small cluster template.  Inside your “Additional Cluster Templates” section, add the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[cluster makercluster]
+EXTENDS=smallcluster
+CLUSTER_SIZE=200
+NODE_IMAGE_ID=XX  #insert the AMI ID number for the instance containing your MAKER installation
+NODE_INSTANCE_TYPE=m1.xlarge
+VOLUMES = data
+DISABLE_QUEUE=True
+</code></pre></div></div>
+
+<p>In addition, you’ll want to tell starcluster where to find your EBS data volume that you created earlier.  In the configuration file, find the “Configuring EBS Volumes” section in your config file and add the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[volume data]
+VOLUME_ID= # volume ID for your EBS 'data' volume
+MOUNT_PATH= /mnt/data
+</code></pre></div></div>
+
+<p>You’re ready to rock!</p>
+
+<h2 id="step-5-setup-your-cluster">Step 5: Setup Your Cluster</h2>
+
+<h4 id="notes-onhardware-and-pricing">Notes on ”Hardware” and Pricing</h4>
+
+<p>First things first, you’ll want to select the “hardware” (known as an instance) that you’ll be making your cluster out of.  The specs and pricing per hour are located here:</p>
+
+<p>http://aws.amazon.com/ec2/pricing/</p>
+
+<p>This can be somewhat overwhelming at first– but worry not!  For my experimentation purposes, I’ve been using m1.xlarge resources, which feature four virtual CPUs, about 15GB of RAM and decent network performance.  You can get pretty crazy with RAM and CPUs, but this typically suffices.  Feel free to play with this as you see fit!</p>
+
+<p>You have the option of paying the listed ”reserved” rates, meaning that as long as you want to use the machine, it’s yours!  But, as scientists with ever shrinking grant funds, sometimes its a good idea to minimize costs whenever possible.  Enter Amazon’s “Spot Pricing”.  Here you can bid on computing time, and so long as your bid is not exceeded, you can use the resources you request.  There is a bit of an art to selecting the proper price so your jobs don’t die– but thankfully Amazon does the hard work of finding out what historical pricing has been.  To figure this out for your desired hardware, StarCluster makes it pretty easy to check:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster spothistory -p m1.large
+</code></pre></div></div>
+
+<p>Which will open up a webpage with pricing over the last 30 days, as well as print a summary of the pertinent information to your terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Fetching spot history for m1.large (VPC)
+&gt;&gt;&gt; Current price: $0.0161
+&gt;&gt;&gt; Max price: $1.5000
+&gt;&gt;&gt; Average price: $0.0743
+</code></pre></div></div>
+
+<p>So, were you to bid on these computers, you would pay $0.0161 per instance per hour– a significant savings off the current “reserved” price of $0.175 per Hour (about 10% the price in fact!).  If demand for these computers shoots up (as you can see happens periodically from your graph), pricing goes up.  If your bid exceeds the current price, you get to keep running at the new price.  If not, your instance is closed.  The trick is to make a bid that is high enough to keep your jobs running– typically, I’ve been working at approximately double the current price, and that seems to work fairly well.</p>
+
+<p>Launch your cluster with the following command.  Remember, we’ve set a 200-node cluster in our configuration file.  The -b flag sets your bid price, and the -c tells starcluster to use your makercluster template.   Because there are so many nodes, this might take a while!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster start -c makercluster -b 0.04 makercluster
+</code></pre></div></div>
+
+<p>Once everything is started up, you are ready to run Maker.  You can upload data from your personal hard drive to the /mnt/data storage area by the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster put makercluster /mnt/data /local/path/to/datafile
+</code></pre></div></div>
+
+<p>Once you’ve uploaded your data, go ahead and login to your master node:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>starcluster sshmaster makercluster
+</code></pre></div></div>
+
+<p>Start a directory for your maker data to live in, then the following to generate your Maker control files.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/sgeadmin/maker/bin/maker -CTL
+</code></pre></div></div>
+
+<p>Set options according to this website:</p>
+
+<p>http://weatherby.genetics.utah.edu/MAKER/wiki/index.php/The_MAKER_control_files_explained</p>
+
+<p>Specifically for your maker cluster, you want to reduce the chunk size of the DNA to be more RAM-efficient and set the temporary directory to be a location specific to each node, rather than using NFS (which slows things down and creates headaches).  In the maker_opts.ctl file, set the following options:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max_dna_len=50000
+TMP=/scratch/sgeadmin/
+</code></pre></div></div>
+
+<p>Finally, you’ll have to generate a hosts file so that OpenMPI knows how to farm out the jobs:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /etc/hosts
+</code></pre></div></div>
+
+<p>Which looks like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+172.31.27.144 master
+</code></pre></div></div>
+
+<p>Copy this to a text editor, and remove all of the lines prior to the line containing “master”.   Remove all IP addresses, so that the following list looks like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>master
+node001
+node002
+...
+</code></pre></div></div>
+
+<p>Save this text file as “hosts.txt” in the maker output directory.</p>
+
+<p>Once you’re satisfied that everything is correctly setup, you should be able to run MAKER with a command like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mpirun -x LD\_PRELOAD -x OMPI\_MCA\_mpi\_warn\_on\_fork -n 200 -hostfile hosts.txt -tag-output ~/maker/bin/maker -cpus 4 2&gt;&amp;1 | tee maker\_log.txt
+</code></pre></div></div>
+
+<p>Happy annotating!</p>
+
+
+</section><section class="background">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<p class="post_nav">
+  <span><i class="fas fa-angle-left"></i> Previous post<br>
+      <a href="/2015/01/15/nsf-grant-the-genomic-basis-of-electric-signal-diversity-is-funded.html">NSF Grant "The Genomic Basis of Electric Signal Diversity" is Funded!</a></span>
+  <span>Next post <i class="fas fa-angle-right"></i><br>
+      <a href="/2015/02/26/savvas-constantinou-joins-the-lab.html">Savvas Constantinou Joins the Lab!</a></span>
+</p>
+=======
+<div class="post-nav">
+  <span>
+    
+      <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
+      <a href="/2015/01/15/nsf-grant-the-genomic-basis-of-electric-signal-diversity-is-funded.html">
+        NSF Grant "The Genomic Basis of Electric Signal Diversity" is Funded!
+      </a>
+    
+  </span>
+  <span>
+    
+      Next post <i class="icon fa-solid fa-angle-right"></i><br>
+      <a href="/2015/02/26/savvas-constantinou-joins-the-lab.html">
+        Savvas Constantinou Joins the Lab!
+      </a>
+    
+  </span>
+</div>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+</section>
+    </main>
+    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<footer data-dark="true">
+
+  <!--
+  <div class="footer_row">
+    Extra details like contact info or address
+  </div>
+  -->
+
+  <div class="footer_row">
+<a class="link" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-icon="true" data-style=""><i class="fas fa-envelope fa-lg fa-fw"></i></a><a class="link" href="https://scholar.google.com/citations?hl=en&user=Jason%20Gallant" data-tooltip="Google Scholar" data-icon="true" data-style=""><i class="fab fa-google fa-lg fa-fw"></i></a><a class="link" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-icon="true" data-style=""><i class="fab fa-github fa-lg fa-fw"></i></a><a class="link" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-icon="true" data-style=""><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+</div>
+
+  <div class="footer_row">
+    <span>
+      © 2025 MSU Electric Fish Lab
+        |  
+      Built with <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
+    </span>
+  </div>
+
+=======
+
+
+
+<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+  <!--
+    <div>
+      Extra details like contact info or address
+    </div>
+  -->
+
+  <div>
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
+      <i class="icon fa-solid fa-envelope"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+      <i class="icon fa-brands fa-github"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
+      <i class="icon fa-brands fa-twitter"></i>
+      
+    </a>
+  </div>
+
+
+    
+  </div>
+
+  <div>
+    © 2025
+    MSU Electric Fish Lab
+      |   Built with
+    <a href="https://github.com/greenelab/lab-website-template">
+      Lab Website Template
+    </a>
+  </div>
+
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/main
+</footer>
+
+  
+</footer></nav></header>
+</noscript>
+
+</body>
+</html>
