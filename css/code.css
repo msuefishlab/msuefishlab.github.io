@@ -14,15 +14,17 @@ code.highlighter-rouge {
 
 div.highlighter-rouge {
   margin: 40px 0;
-  background: #9e9e9e;
-  overflow-x: auto;
-  overflow-y: auto;
 }
 div.highlighter-rouge:first-child {
   margin-top: 0;
 }
 div.highlighter-rouge:last-child {
   margin-bottom: 0;
+}
+div.highlighter-rouge {
+  background: #9e9e9e;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 div.highlighter-rouge pre.highlight {
   display: inline-block;
